@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sınıf Web Sitesi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sınıf Web Sitesi</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#students">Öğrenci Listesi</a></li>
+                <li><a href="#schedule">Program</a></li>
+                <li><a href="#chat">Sohbet</a></li>
+                <li><a href="#friends">Arkadaşlar</a></li>
+                <li><a href="#team">Takım</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Hoş Geldiniz!</h2>
+        <p>Burası sınıfınız için özel olarak hazırlanmış web sitesi.</p>
+    </section>
+
+    <section id="students">
+        <h2>Öğrenci Listesi</h2>
+        <ul class="student-list">
+            <li>Öğrenci 1</li>
+            <li>Öğrenci 2</li>
+            <li>Öğrenci 3</li>
+            <!-- Diğer öğrenciler burada listelenecek -->
+        </ul>
+    </section>
+
+    <section id="schedule">
+        <h2>Ders Programı</h2>
+        <table class="schedule-table">
+            <tr>
+                <th>Pazartesi</th>
+                <th>Salı</th>
+                <th>Çarşamba</th>
+                <th>Perşembe</th>
+                <th>Cuma</th>
+            </tr>
+            <tr>
+                <td>Ders 1</td>
+                <td>Ders 2</td>
+                <td>Ders 3</td>
+                <td>Ders 4</td>
+                <td>Ders 5</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="chat">
+        <h2>Sohbet Alanı</h2>
+        <div class="chat-container">
+            <div id="chat-sidebar" class="chat-sidebar">
+                <h3>Takım Üyeleri</h3>
+                <ul id="friend-list" class="friend-list">
+                    <!-- Takım üyeleri burada listelenecek -->
+                </ul>
+            </div>
+            <div id="chat-box" class="chat-box">
+                <!-- Seçilen takım üyesi ile sohbet burada gösterilecek -->
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Mesajınızı yazın...">
+                <button id="send-btn">Gönder</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="friends">
+        <h2>Arkadaşlar</h2>
+        <input type="text" id="friend-input" placeholder="Arkadaş ekle...">
+        <button id="add-friend-btn">Ekle</button>
+    </section>
+
+    <section id="team">
+        <h2>Takım Oluştur</h2>
+        <input type="text" id="team-name-input" placeholder="Takım adı girin...">
+        <button id="create-team-btn">Takım Oluştur</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
